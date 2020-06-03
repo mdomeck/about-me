@@ -1,36 +1,39 @@
 'use strict';
 
+/*Ask name through prompt and give response*/
+
 var firstName = 'first name';
 
-
 var firstNameAnswer = prompt('What is your ' + firstName + '?');
-console.log('firstNameAnswer', firstNameAnswer);
+// console.log('firstNameAnswer', firstNameAnswer);
 
 alert('Hello ' + firstNameAnswer + ', welcome to all about me!');
 
+// Prompt 5 yes or no questions
+
 var meghanTeacherGuess = prompt('Was Meghan a teacher?');
 var meghanTeacher = meghanTeacherGuess.toLowerCase();
-console.log('meghanTeacher', meghanTeacher);
+// console.log('meghanTeacher', meghanTeacher);
 
 if (meghanTeacher === 'yes') {
-  alert('Correct');
+  alert('Correct, Meghan taught at Bright Horizons.');
 } else {
-  alert('Incorrect');
+  alert('Incorrect, Meghan was a teacher at Bright Horizons.');
 }
 
 var stateLiveAnswer = prompt('Does Meghan live in Ohio?');
 var stateLive = stateLiveAnswer.toLowerCase();
-console.log('stateLive', stateLive);
+// console.log('stateLive', stateLive);
 
 if (stateLive === 'yes') {
-  alert('Correct');
+  alert('Correct, ');
 } else {
   alert('Incorrect');
 }
 
 var playCelloAnswer = prompt('Does Meghan play the cello?');
 var playCello = playCelloAnswer.toLowerCase();
-console.log('playCello', playCello);
+// console.log('playCello', playCello);
 
 if (playCello === 'yes') {
   alert('Correct');
@@ -39,7 +42,7 @@ if (playCello === 'yes') {
 }
 var hasDaughterAnswer = prompt('Does Meghan have a daughter?');
 var hasDaughter = hasDaughterAnswer.toLowerCase();
-console.log('hasDaughter', hasDaughter);
+// console.log('hasDaughter', hasDaughter);
 
 if (hasDaughter === 'yes') {
   alert('Correct');
@@ -49,7 +52,7 @@ if (hasDaughter === 'yes') {
 
 var nextJobAnswer = prompt('Is Meghan a software developer?');
 var nextJob = nextJobAnswer.toLowerCase();
-console.log('nextJob', nextJob);
+// console.log('nextJob', nextJob);
 
 if (nextJob === 'yes') {
   alert('Correct');
