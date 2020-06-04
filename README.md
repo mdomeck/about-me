@@ -7,3 +7,8 @@ About Me Lab 03
 - OL/ UL in HTML
 - Guess a number with alert
 - JS loop and final score
+
+About Me Lab 04
+- Driver: David Dicken
+- Navigator: Meghan Domeck
+- Code was worked on together to add functions within the questionairre.
