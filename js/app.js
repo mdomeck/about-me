@@ -102,5 +102,5 @@ if (nextJob === 'yes') {
 } else {
   alert('Incorrect');
 }
-
+JSON
 alert('It was nice having you ' + firstNameAnswer + '. Hope you enjoyed learning a little about me! You got ' + correctAnswers + ' answers correct, way to go!');
