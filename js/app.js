@@ -19,6 +19,7 @@ iPlayCello();
 iHaveDaughter();
 daughterAge();
 whatIlikeToDo();
+futureJob();
 
 function amIaTeacher()
 {
@@ -129,7 +130,7 @@ function futureJob()
   var nextJob = nextJobAnswer.toLowerCase();
   console.log('nextJob', nextJob);
 
-  if (nextJob === 'yes') {
+  if (nextJob === 'yes' || nextJob === 'y') {
     correctAnswers++;
     alert('Correct');
   } else {
