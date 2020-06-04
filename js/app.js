@@ -15,6 +15,7 @@ var correctAnswers = 0;
 
 amIaTeacher();
 whereIlive();
+iPlayCello();
 
 function amIaTeacher()
 {
@@ -52,7 +53,7 @@ function iPlayCello()
   var playCello = playCelloAnswer.toLowerCase();
   console.log('playCello', playCello);
 
-  if (playCello === 'yes') 
+  if (playCello === 'yes' || playCello === 'y') 
   {
     correctAnswers++;
     alert('Correct');
