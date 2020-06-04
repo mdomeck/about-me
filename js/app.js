@@ -3,16 +3,14 @@
 /*Ask name through prompt and give response*/
 
 var firstName = 'first name';
-
-var firstNameAnswer = prompt('What is your ' + firstName + '?');
-console.log('firstNameAnswer', firstNameAnswer);
-
-alert('Hello ' + firstNameAnswer + ', welcome to all about me!');
-
+var freeTimeArray = ['knitting', 'cello', 'puzzles'];
+var firstNameAnswer = 'null';
 // Prompt 5 yes or no questions
 
 var correctAnswers = 0;
 
+
+myName();
 amIaTeacher();
 whereIlive();
 iPlayCello();
@@ -20,6 +18,15 @@ iHaveDaughter();
 daughterAge();
 whatIlikeToDo();
 futureJob();
+finalAlert();
+
+function myName()
+{
+  firstNameAnswer = prompt('What is your ' + firstName + '?');
+  console.log('firstNameAnswer', firstNameAnswer);
+
+  alert('Hello ' + firstNameAnswer + ', welcome to all about me!');
+}
 
 function amIaTeacher()
 {
@@ -104,11 +111,10 @@ function daughterAge()
   }
 }
 
-var freeTimeArray = ['knitting', 'cello', 'puzzles'];
-
 function whatIlikeToDo()
 {
   for (var i = 0; i < 6; i++) {
+    console.log('before freeTimeAnswer', freeTimeAnswer);
     var freeTimeAnswer = prompt('What does Meghan do in her free time?').toLowerCase();
     console.log('freeTimeAnswer', freeTimeAnswer);
 
@@ -118,6 +124,7 @@ function whatIlikeToDo()
       break;
     }
     else if (freeTimeAnswer !== freeTimeArray) {
+      console.log('else if');
       alert('Try again');
     }
   }
@@ -137,4 +144,7 @@ function futureJob()
     alert('Incorrect');
   }
 }
-alert('It was nice having you ' + firstNameAnswer + '. Hope you enjoyed learning a little about me! You got ' + correctAnswers + ' answers correct, way to go!');
+
+function finalAlert() {
+  alert('It was nice having you ' + firstNameAnswer + '. Hope you enjoyed learning a little about me! You got ' + correctAnswers + ' answers correct, way to go!');
+}
