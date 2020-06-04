@@ -14,6 +14,7 @@ alert('Hello ' + firstNameAnswer + ', welcome to all about me!');
 var correctAnswers = 0;
 
 amIaTeacher();
+whereIlive();
 
 function amIaTeacher()
 {
@@ -21,7 +22,7 @@ function amIaTeacher()
   var meghanTeacher = meghanTeacherGuess.toLowerCase();
   console.log('meghanTeacher', meghanTeacher);
   console.log('correctAnswers before', correctAnswers);
-  if (meghanTeacher === 'yes') {
+  if (meghanTeacher === 'yes' || meghanTeacher === 'y') {
     correctAnswers++;
     alert('Correct, Meghan taught at Bright Horizons.');
   } else {
@@ -37,7 +38,7 @@ function whereIlive()
   var stateLive = stateLiveAnswer.toLowerCase();
   console.log('stateLive', stateLive);
 
-  if (stateLive === 'yes') {
+  if (stateLive === 'yes' || stateLive === 'y') {
     correctAnswers++;
     alert('Correct, ');
   } else {
