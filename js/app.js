@@ -16,7 +16,9 @@ var correctAnswers = 0;
 amIaTeacher();
 whereIlive();
 iPlayCello();
-iHaveDaughter()
+iHaveDaughter();
+daughterAge();
+whatIlikeToDo();
 
 function amIaTeacher()
 {
