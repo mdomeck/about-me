@@ -16,6 +16,7 @@ var correctAnswers = 0;
 amIaTeacher();
 whereIlive();
 iPlayCello();
+iHaveDaughter()
 
 function amIaTeacher()
 {
@@ -69,7 +70,7 @@ function iHaveDaughter()
   var hasDaughter = hasDaughterAnswer.toLowerCase();
   console.log('hasDaughter', hasDaughter);
 
-  if (hasDaughter === 'yes') {
+  if (hasDaughter === 'yes' || hasDaughter === 'y') {
     correctAnswers++;
     alert('Correct');
   } else {
