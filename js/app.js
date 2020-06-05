@@ -1,25 +1,13 @@
 'use strict';
 
-/*Ask name through prompt and give response*/
+//=============declared variables==================
 
 var firstName = 'first name';
 var freeTimeArray = ['knitting', 'cello', 'puzzles'];
 var firstNameAnswer = 'null';
-// Prompt 5 yes or no questions
-
 var correctAnswers = 0;
 
-
-myName();
-amIaTeacher();
-whereIlive();
-iPlayCello();
-iHaveDaughter();
-daughterAge();
-whatIlikeToDo();
-futureJob();
-finalAlert();
-
+//=============functions=======================
 function myName()
 {
   firstNameAnswer = prompt('What is your ' + firstName + '?');
@@ -148,3 +136,16 @@ function futureJob()
 function finalAlert() {
   alert('It was nice having you ' + firstNameAnswer + '. Hope you enjoyed learning a little about me! You got ' + correctAnswers + ' answers correct, way to go!');
 }
+
+//=============function calls======================
+myName();
+amIaTeacher();
+whereIlive();
+iPlayCello();
+iHaveDaughter();
+daughterAge();
+whatIlikeToDo();
+futureJob();
+finalAlert();
+
+
