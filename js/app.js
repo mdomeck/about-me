@@ -40,9 +40,9 @@ function whereIlive()
 
   if (stateLive === 'yes' || stateLive === 'y') {
     correctAnswers++;
-    alert('Correct, ');
+    alert('Correct, lived in Ohio my whole life.');
   } else {
-    alert('Incorrect');
+    alert('Incorrect, Ohio is the heart of it all!');
   }
 }
 
@@ -55,10 +55,10 @@ function iPlayCello()
   if (playCello === 'yes' || playCello === 'y') 
   {
     correctAnswers++;
-    alert('Correct');
+    alert('Correct, that\'s the big string instrument still played sitting down.');
   } else 
   {
-    alert('Incorrect');
+    alert('Incorrect, that\'s the big string instrument still played sitting down.');
   }
 }
 
