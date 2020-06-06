@@ -11,8 +11,6 @@ var correctAnswers = 0;
 function myName()
 {
   firstNameAnswer = prompt('What is your ' + firstName + '?');
-  console.log('firstNameAnswer', firstNameAnswer);
-
   alert('Hello ' + firstNameAnswer + ', welcome to all about me!');
 }
 
@@ -20,8 +18,6 @@ function amIaTeacher()
 {
   var meghanTeacherGuess = prompt('Was Meghan a teacher?');
   var meghanTeacher = meghanTeacherGuess.toLowerCase();
-  console.log('meghanTeacher', meghanTeacher);
-  console.log('correctAnswers before', correctAnswers);
   if (meghanTeacher === 'yes' || meghanTeacher === 'y') {
     correctAnswers++;
     alert('Correct, Meghan taught at Bright Horizons.');
@@ -30,14 +26,10 @@ function amIaTeacher()
   }
 }
 
-// console.log('correctAnswers after', correctAnswers);
-
 function whereIlive()
 {
   var stateLiveAnswer = prompt('Does Meghan live in Ohio?');
   var stateLive = stateLiveAnswer.toLowerCase();
-  console.log('stateLive', stateLive);
-
   if (stateLive === 'yes' || stateLive === 'y') {
     correctAnswers++;
     alert('Correct, lived in Ohio my whole life.');
@@ -50,13 +42,11 @@ function iPlayCello()
 {
   var playCelloAnswer = prompt('Does Meghan play the cello?');
   var playCello = playCelloAnswer.toLowerCase();
-  console.log('playCello', playCello);
-
   if (playCello === 'yes' || playCello === 'y') 
   {
     correctAnswers++;
     alert('Correct, that\'s the big string instrument still played sitting down.');
-  } else 
+  } else
   {
     alert('Incorrect, that\'s the big string instrument still played sitting down.');
   }
@@ -66,8 +56,6 @@ function iHaveDaughter()
 {
   var hasDaughterAnswer = prompt('Does Meghan have a daughter?');
   var hasDaughter = hasDaughterAnswer.toLowerCase();
-  console.log('hasDaughter', hasDaughter);
-
   if (hasDaughter === 'yes' || hasDaughter === 'y') {
     correctAnswers++;
     alert('Correct');
@@ -83,8 +71,6 @@ function daughterAge()
   {
     var howOldDaughterAnswer = prompt('How old is Meghan\'s daughter?');
     var howOldDaughter = howOldDaughterAnswer.toLowerCase();
-    console.log('howOldDaughter', howOldDaughter);
-
     if (howOldDaughter === '8') {
       correctAnswers++;
       alert('You got it!');
@@ -102,17 +88,13 @@ function daughterAge()
 function whatIlikeToDo()
 {
   for (var i = 0; i < 6; i++) {
-    console.log('before freeTimeAnswer', freeTimeAnswer);
     var freeTimeAnswer = prompt('What does Meghan do in her free time?').toLowerCase();
-    console.log('freeTimeAnswer', freeTimeAnswer);
-
     if (freeTimeAnswer === freeTimeArray[0] || freeTimeAnswer === freeTimeArray[1] || freeTimeAnswer === freeTimeArray[2]) {
       correctAnswers++;
       alert('Correct');
       break;
     }
     else if (freeTimeAnswer !== freeTimeArray) {
-      console.log('else if');
       alert('Try again');
     }
   }
@@ -123,8 +105,6 @@ function futureJob()
 {
   var nextJobAnswer = prompt('Is Meghan a software developer?');
   var nextJob = nextJobAnswer.toLowerCase();
-  console.log('nextJob', nextJob);
-
   if (nextJob === 'yes' || nextJob === 'y') {
     correctAnswers++;
     alert('Correct');
